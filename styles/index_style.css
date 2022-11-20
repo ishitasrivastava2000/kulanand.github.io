@@ -1,99 +1,344 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400&display=swap");
- @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap");
- * {
-	 box-sizing: border-box;
-	 margin: 0;
-	 padding: 0;
+:root {
+  --white:#f1f1f1
 }
- :root {
-	 font-size: 16px;
-	 --link-translate-x: 3rem;
+body {
+  margin: 0;
+  font-family: Montserrat;
+  font-size: 40px;
+  color: var(--white);
+  letter-spacing: 0.1em;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
- body {
-	 width: 100%;
-	 height: 100vh;
-	 display: flex;
-	 justify-content: center;
-	 align-items: center;
-	 background: #000;
-	 overflow: hidden;
+
+/* Opening page */
+div > span {
+  opacity: 0.15;
 }
- a {
-	 text-decoration: none;
+#Here, #we, #are, #in, #the, #presence, #of, #a, #shimmering, #consciousness {
+  opacity: .75;
+  animation: flickerHereweareinthepresenceofashimmering .5s linear  reverse infinite;
 }
- a:focus {
-	 outline: none;
-	 border: none;
+#consciousness::after {
+  content: '';
+  width: 150%;
+  -webkit-box-shadow: -35px 0px 60px 8px rgba(255,255,255,1);
+  -moz-box-shadow: -35px 0px 60px 8px rgba(255,255,255,1);
+  box-shadow: -35px 0px 60px 8px rgba(255,255,255,1);
 }
- .nav__link {
-	 font-size: 5rem;
-	 color: #fff;
-	 display: grid;
-	 font-style: italic;
+#Here, #we, #are, #in, #the, #presence, #of, #a, #shimmering, #consciousness {
+  animation: flickerHereweareinthepresenceofashimmeringconsciousness 2s linear reverse infinite;
+  position: relative;
 }
- .nav__link--text {
-	 grid-area: 1;
-	 transition: opacity 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95), transform 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+#consciousness::after, 
+#consciousness::before  {
+  content:' ';
+  width: 100px;
+  height: 100px;
+  background: var(--white);
+  position: absolute;
+  top: -50%;
+  left: 70%;
+  border-radius: 70%;
+  opacity: 0.05;
+  filter: blur(10px);
 }
- .nav__link--text .word {
-	 white-space: nowrap;
+#consciousness::after {
+  width: 350px;
+  height: 200px;
+  top: -150%;
+  left: -5%;
+  opacity: 0.1;
+  filter: blur(10px);
 }
- .nav__link--text .char {
-	 display: inline-block;
-	 transform-origin: 50% 50% 0.4em;
-	 transition: transform 0.5s cubic-bezier(0.5, 0, 0, 1);
-	 transition-delay: calc(0ms + var(--char-index) * 25ms);
-	 backface-visibility: hidden;
-	 margin: 0 -0.02em;
+#Here {
+  animation: flickerconsciousness 5s linear reverse infinite;
 }
- .nav__link--text:nth-child(1) {
-	 font-family: "Playfair Display";
-	 font-weight: 500;
+#we {
+  animation: flickerconsciousness 5s linear reverse infinite;
 }
- .nav__link--text:nth-child(2) {
-	 font-family: "Roboto";
-	 font-weight: 500;
-	 opacity: 0;
+#are {
+  animation: flickerconsciousness 5s linear reverse infinite;
 }
- .nav__link--text:nth-child(2) .char {
-	 transform: rotate3d(1, -0.5, 0, 90deg);
+#in {
+  animation: flickerconsciousness 5s linear reverse infinite;
 }
- .nav__link:hover .nav__link--text {
-	 transform: translateX(var(--link-translate-x));
+#the {
+  animation: flickerconsciousness 5s linear reverse infinite;
 }
- .nav__link:hover .nav__link--text:nth-child(1) {
-	 opacity: 0;
+#presence {
+  animation: flickerconsciousness 5s linear reverse infinite;
 }
- .nav__link:hover .nav__link--text:nth-child(1) .char {
-	 transform: rotate3d(1, 0.3, 0, -90deg);
+#of {
+  animation: flickerconsciousness 5s linear reverse infinite;
 }
- .nav__link:hover .nav__link--text:nth-child(2) {
-	 opacity: 1;
+#consciousness {
+  animation: flickerconsciousness 5s linear reverse infinite
 }
- .nav__link:hover .nav__link--text:nth-child(2) .char {
-	 transform: rotate3d(0, 0, 0, 90deg);
+
+@keyframes flickerconsciousness {
+  0% {
+    opacity: 0.4;
+  }
+  5% {
+    opacity: 0.5;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  15% {
+    opacity: 0.85;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0.1;
+  }
+  40% {
+    opacity: 0.25;
+  }
+  45% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.85;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
- @media only screen and (max-width: 20rem) {
-	 :root {
-		 font-size: 10px;
-		 --link-translate-x: 2rem;
-	}
+
+@keyframes flickerwe {
+  0% {
+    opacity: 0.19;
+  }
+  5% {
+    opacity: 0.2;
+  }
+  10% {
+    opacity: 0.25;
+  }
+  15% {
+    opacity: 0.35;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.4;
+  }
+  35% {
+    opacity: 0.1;
+  }
+  40% {
+    opacity: 0.25;
+  }
+  45% {
+    opacity: 0.2;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.35;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.4;
+  }
 }
- .support {
-	 position: absolute;
-	 right: 10px;
-	 bottom: 10px;
-	 padding: 10px;
-	 display: flex;
+
+@keyframes flickerare {
+  0% {
+    opacity: 0.15;
+  }
+  5% {
+    opacity: 0.2;
+  }
+  10% {
+    opacity: 0.12;
+  }
+  15% {
+    opacity: 0.2;
+  }
+  25% {
+    opacity: 0.15;
+  }
+  30% {
+    opacity: 0.4;
+  }
+  35% {
+    opacity: 0.05;
+  }
+  40% {
+    opacity: 0.12;
+  }
+  45% {
+    opacity: 0.15;
+  }
+  60% {
+    opacity: 0.3;
+  }
+  70% {
+    opacity: 0.2;
+  }
+  80% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.18;
+  }
+  100% {
+    opacity: 0.3;
+  }
 }
- .support a {
-	 margin: 0 10px;
-	 color: #fff;
-	 font-size: 1.8rem;
-	 backface-visibility: hidden;
-	 transition: all 150ms ease;
+
+@keyframes flickerinthe {
+  0% {
+    opacity: 0.01;
+  }
+  5% {
+    opacity: 0.05;
+  }
+  10% {
+    opacity: 0.03;
+  }
+  15% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 0.07;
+  }
+  30% {
+    opacity: 0.1;
+  }
+  35% {
+    opacity: 0.05;
+  }
+  40% {
+    opacity: 0.06;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  60% {
+    opacity: 0.;
+  }
+  70% {
+    opacity: 0.1;
+  }
+  80% {
+    opacity: 0.;
+  }
+  90% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 0.1;
+  }
 }
- .support a:hover {
-	 transform: scale(1.1);
+
+label .menu {
+  position: absolute;
+  right: -100px;
+  top: -100px;
+  z-index: 100;
+  width: 200px;
+  height: 200px;
+  background: rgb(0, 0, 0);
+  border-radius: 50% 50% 50% 50%;
+  transition: 0.5s ease-in-out;
+  box-shadow: 0 0 0 0 rgb(187, 175, 175), 0 0 0 0 #fff;
+  cursor: pointer;
 }
- 
+label .hamburger {
+  position: absolute;
+  top: 135px;
+  left: 50px;
+  width: 30px;
+  height: 2px;
+  background: rgb(255, 255, 255);
+  display: block;
+  transform-origin: center;
+  transition: 1s ease-in-out;
+}
+label .hamburger:after, label .hamburger:before {
+  transition: 1s ease-in-out;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+}
+label .hamburger:before {
+  top: -10px;
+}
+label .hamburger:after {
+  bottom: -10px;
+}
+label input {
+  display: none;
+}
+label input:checked + .menu {
+  box-shadow: 0 0 0 100vw rgb(255, 254, 254), 0 0 0 100vh rgb(255, 137, 69);
+  border-radius: 0;
+}
+label input:checked + .menu .hamburger {
+  transform: rotate(45deg);
+}
+label input:checked + .menu .hamburger:after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
+label input:checked + .menu .hamburger:before {
+  transform: rotate(90deg);
+  top: 0;
+}
+label input:checked + .menu + ul {
+  opacity: 1;
+}
+label ul {
+  z-index: 200;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.25s 0s ease-in-out;
+}
+label a {
+  margin-bottom: 1em;
+  display: block;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
+}
