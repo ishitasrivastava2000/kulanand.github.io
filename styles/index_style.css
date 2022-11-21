@@ -341,6 +341,7 @@ main {
 	 box-sizing: border-box;
 	 margin: 0;
 	 padding: 0;
+   justify-content: center;
    text-decoration: none;
 }
  :root {
@@ -373,7 +374,7 @@ main {
 	 transition: transform 0.5s cubic-bezier(0.5, 0, 0, 1);
 	 transition-delay: calc(0ms + var(--char-index) * 25ms);
 	 backface-visibility: hidden;
-	 margin: 0 -0.02em;
+	 margin: 0;
 }
  .nav__link--text:nth-child(1) {
 	 font-family: "Playfair Display";
@@ -384,49 +385,3 @@ main {
 	 font-weight: 500;
 	 opacity: 0;
 }
- .nav__link--text:nth-child(2) .char {
-	 transform: rotate3d(1, -0.5, 0, 90deg);
-}
- .nav__link:hover .nav__link--text {
-	 transform: translateX(var(--link-translate-x));
-}
- .nav__link:hover .nav__link--text:nth-child(1) {
-	 opacity: 0;
-}
- .nav__link:hover .nav__link--text:nth-child(1) .char {
-	 transform: rotate3d(1, 0.3, 0, -90deg);
-}
- .nav__link:hover .nav__link--text:nth-child(2) {
-	 opacity: 1;
-}
- .nav__link:hover .nav__link--text:nth-child(2) .char {
-	 transform: rotate3d(0, 0, 0, 90deg);
-}
- @media only screen and (max-width: 20rem) {
-	 :root {
-		 font-size: 10px;
-		 --link-translate-x: 2rem;
-	}
-}
-
-/* Flashlight Overlay */
-:root {
-  cursor: none;
-  --cursorX: 50vw;
-  --cursorY: 50vh;
-}
-:root:before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  pointer-events: none;
-  background: radial-gradient(
-    circle 10vmax at var(--cursorX) var(--cursorY),
-    rgba(0,0,0,0) 0%,
-    rgba(0,0,0,.5) 80%,
-    rgba(0,0,0,.95) 100%
-  )
-}
- 
