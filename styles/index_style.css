@@ -1,8 +1,9 @@
-:root {
+/*:root {
   --white:#f1f1f1
-}
-body {
+}*/
+/*body {
   margin: 0;
+  padding: 0;
   font-family: Montserrat;
   font-size: 40px;
   color: var(--white);
@@ -30,6 +31,7 @@ div > span {
   box-shadow: -35px 0px 60px 8px rgba(255,255,255,1);
 }
 #Here, #we, #are, #in, #the, #presence, #of, #a, #shimmering, #consciousness {
+  color: rgb(134, 191, 255);
   animation: flickerHereweareinthepresenceofashimmeringconsciousness 2s linear reverse infinite;
   position: relative;
 }
@@ -55,27 +57,35 @@ div > span {
   filter: blur(10px);
 }
 #Here {
+  color: rgb(134, 191, 255);
   animation: flickerconsciousness 5s linear reverse infinite;
 }
 #we {
+  color: rgb(134, 191, 255);
   animation: flickerconsciousness 5s linear reverse infinite;
 }
 #are {
+  color: rgb(134, 191, 255);
   animation: flickerconsciousness 5s linear reverse infinite;
 }
 #in {
+  color: rgb(134, 191, 255);
   animation: flickerconsciousness 5s linear reverse infinite;
 }
 #the {
+  color: rgb(134, 191, 255);
   animation: flickerconsciousness 5s linear reverse infinite;
 }
 #presence {
+  color: rgb(134, 191, 255);
   animation: flickerconsciousness 5s linear reverse infinite;
 }
 #of {
+  color: rgb(134, 191, 255);
   animation: flickerconsciousness 5s linear reverse infinite;
 }
-#consciousness {
+#shimmering {
+  color: rgb(134, 191, 255);
   animation: flickerconsciousness 5s linear reverse infinite
 }
 
@@ -256,89 +266,69 @@ div > span {
   }
   100% {
     opacity: 0.1;
-  }
+ }
 }
 
-label .menu {
+@font-face {
+  font-family: Montserrat;
+  font-size: 40px;
+  /*src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/sucrose.woff2') format('woff2');*/
+}
+/*@font-face {
+  font-family: 'IM Fell French Canon Pro';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/im-fell-french-canon-pro.woff2') format('woff2');
+}*/
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+  font-size: 40px;
+  color: var(--white);
+  letter-spacing: 0.1em;
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+}
+header {
+  background: url(../assets/bg.jpg) no-repeat;
+  padding-top: 61.93333333%;
+  background-size: cover;
+}
+header img {
   position: absolute;
-  right: -100px;
-  top: -100px;
-  z-index: 100;
-  width: 200px;
-  height: 200px;
-  background: rgb(0, 0, 0);
-  border-radius: 50% 50% 50% 50%;
-  transition: 0.5s ease-in-out;
-  box-shadow: 0 0 0 0 rgb(187, 175, 175), 0 0 0 0 #fff;
-  cursor: pointer;
-}
-label .hamburger {
-  position: absolute;
-  top: 135px;
-  left: 50px;
-  width: 30px;
-  height: 2px;
-  background: rgb(255, 255, 255);
-  display: block;
-  transform-origin: center;
-  transition: 1s ease-in-out;
-}
-label .hamburger:after, label .hamburger:before {
-  transition: 1s ease-in-out;
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: rgb(255, 255, 255);
-}
-label .hamburger:before {
-  top: -10px;
-}
-label .hamburger:after {
-  bottom: -10px;
-}
-label input {
-  display: none;
-}
-label input:checked + .menu {
-  box-shadow: 0 0 0 100vw rgb(255, 254, 254), 0 0 0 100vh rgb(255, 137, 69);
-  border-radius: 0;
-}
-label input:checked + .menu .hamburger {
-  transform: rotate(45deg);
-}
-label input:checked + .menu .hamburger:after {
-  transform: rotate(90deg);
-  bottom: 0;
-}
-label input:checked + .menu .hamburger:before {
-  transform: rotate(90deg);
   top: 0;
+  right: 0;
+  width: 45.8%;
 }
-label input:checked + .menu + ul {
-  opacity: 1;
-}
-label ul {
-  z-index: 200;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: 0.25s 0s ease-in-out;
-}
-label a {
-  margin-bottom: 1em;
+header h1 {
   display: block;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-}
-h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
+  position: fixed;
+  top: 45%;
+  margin-right: 10%;
+  margin-left: 10%;
+  /*right: 2rem;*/
+  font-size: 40px;
+  line-height: 0.8;
   text-align: center;
+}
+/*header h1 span {
+  display: block;
+  font-size: 8.75vw;
+}*/
+main {
+  background: #fff;
+  position: relative;
+  border: 1px solid #fff;
+  font-family: 'IM Fell French Canon Pro';
+  font-size: 1.4rem;
+  padding: 2rem 25%;
+  line-height: 1.6;
+}
+@media all and (max-width: 400px) {
+  main {
+    padding: 2rem;
+ }
 }
