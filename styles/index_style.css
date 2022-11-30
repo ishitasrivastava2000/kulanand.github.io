@@ -31,7 +31,7 @@ div > span {
   box-shadow: -35px 0px 60px 8px rgba(255,255,255,1);
 }
 #Here, #we, #are, #in, #the, #presence, #of, #a, #shimmering, #consciousness {
-  color: rgb(134, 191, 255);
+  color:#fdf4e5;
   animation: flickerHereweareinthepresenceofashimmeringconsciousness 2s linear reverse infinite;
   position: relative;
 }
@@ -57,35 +57,35 @@ div > span {
   filter: blur(10px);
 }
 #Here {
-  color: rgb(134, 191, 255);
+  color: #fdf4e5;
   animation: flickerconsciousness 5s linear reverse infinite;
 }
 #we {
-  color: rgb(134, 191, 255);
+  color: #fdf4e5;
   animation: flickerconsciousness 5s linear reverse infinite;
 }
 #are {
-  color: rgb(134, 191, 255);
+  color: #fdf4e5;
   animation: flickerconsciousness 5s linear reverse infinite;
 }
 #in {
-  color: rgb(134, 191, 255);
+  color: #fdf4e5;
   animation: flickerconsciousness 5s linear reverse infinite;
 }
 #the {
-  color: rgb(134, 191, 255);
+  color: #fdf4e5;
   animation: flickerconsciousness 5s linear reverse infinite;
 }
 #presence {
-  color: rgb(134, 191, 255);
+  color: #fdf4e5;
   animation: flickerconsciousness 5s linear reverse infinite;
 }
 #of {
-  color: rgb(134, 191, 255);
+  color: #fdf4e5;
   animation: flickerconsciousness 5s linear reverse infinite;
 }
 #shimmering {
-  color: rgb(134, 191, 255);
+  color: #fdf4e5;
   animation: flickerconsciousness 5s linear reverse infinite
 }
 
@@ -293,7 +293,7 @@ body {
   align-items: center;
 }
 header {
-  background: url(../assets/bg.jpg) no-repeat;
+  background: url(../assets/projector.jpg) no-repeat;
   padding-top: 61.93333333%;
   background-size: cover;
 }
@@ -319,7 +319,7 @@ header h1 {
   font-size: 8.75vw;
 }*/
 main {
-  background: #fff;
+  background: #fdf4e5;
   position: relative;
   border: 1px solid #fff;
   font-family: 'IM Fell French Canon Pro';
