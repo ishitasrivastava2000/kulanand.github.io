@@ -1,2 +1,2 @@
 # kulanand.github.io
-in the presence of a shimmering consciousness
+Showcasing screenwriting, fiction, and non-fiction works.
